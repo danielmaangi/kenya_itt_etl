@@ -1,0 +1,589 @@
+Error in UseMethod("months") : 
+  no applicable method for 'months' applied to an object of class "c('double', 'numeric')"
+Calls: format -> months
+Execution halted
+Error in UseMethod("months") : 
+  no applicable method for 'months' applied to an object of class "c('double', 'numeric')"
+Calls: format -> months
+Execution halted
+Error in UseMethod("months") : 
+  no applicable method for 'months' applied to an object of class "c('double', 'numeric')"
+Calls: format -> months
+Execution halted
+Error in UseMethod("months") : 
+  no applicable method for 'months' applied to an object of class "c('double', 'numeric')"
+Calls: format -> months
+Execution halted
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file 'R/packages.R': No such file or directory
+Execution halted
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file 'R/packages.R': No such file or directory
+Execution halted
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file 'R/packages.R': No such file or directory
+Execution halted
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file 'R/packages.R': No such file or directory
+Execution halted
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file 'R/packages.R': No such file or directory
+Execution halted
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file 'R/packages.R': No such file or directory
+Execution halted
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file 'R/packages.R': No such file or directory
+Execution halted
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file 'R/packages.R': No such file or directory
+Execution halted
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file 'R/packages.R': No such file or directory
+Execution halted
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file 'R/packages.R': No such file or directory
+Execution halted
+Error in library(httr) : there is no package called ‘httr’
+Calls: source -> withVisible -> eval -> eval -> library
+Execution halted
+Error in library(httr) : there is no package called ‘httr’
+Calls: source -> withVisible -> eval -> eval -> library
+Execution halted
+Installing package into ‘/home/dmaangi/R/x86_64-pc-linux-gnu-library/4.3’
+(as ‘lib’ is unspecified)
+trying URL 'https://cloud.r-project.org/src/contrib/renv_1.0.5.tar.gz'
+Content type 'application/x-gzip' length 1166502 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+* installing *source* package ‘renv’ ...
+** package ‘renv’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (renv)
+
+The downloaded source packages are in
+	‘/tmp/RtmphGSrw2/downloaded_packages’
+
+Attaching package: ‘renv’
+
+The following objects are masked from ‘package:stats’:
+
+    embed, update
+
+The following objects are masked from ‘package:utils’:
+
+    history, upgrade
+
+The following objects are masked from ‘package:base’:
+
+    autoload, load, remove
+
+Error in library(httr) : there is no package called ‘httr’
+Calls: source -> withVisible -> eval -> eval -> library
+Execution halted
+- The project is out-of-sync -- use `renv::status()` for details.
+# Downloading packages -------------------------------------------------------
+- Downloading renv from CRAN ...                OK [1.1 Mb in 0.28s]
+Successfully downloaded 1 package in 2.6 seconds.
+
+The following package(s) will be installed:
+- renv [1.0.5]
+These packages will be installed into "~/renv/library/R-4.3/x86_64-pc-linux-gnu".
+
+# Installing packages --------------------------------------------------------
+- Installing renv ...                           OK [built from source and cached in 34s]
+Successfully installed 1 package in 34 seconds.
+
+Attaching package: ‘renv’
+
+The following objects are masked from ‘package:stats’:
+
+    embed, update
+
+The following objects are masked from ‘package:utils’:
+
+    history, upgrade
+
+The following objects are masked from ‘package:base’:
+
+    autoload, load, remove
+
+Error in library(httr) : there is no package called ‘httr’
+Calls: source -> withVisible -> eval -> eval -> library
+Execution halted
+- The project is out-of-sync -- use `renv::status()` for details.
+The following package(s) will be installed:
+- renv [1.0.5]
+These packages will be installed into "~/renv/library/R-4.3/x86_64-pc-linux-gnu".
+
+# Installing packages --------------------------------------------------------
+- Installing renv ...                           OK [linked from cache]
+Successfully installed 1 package in 0.14 seconds.
+
+Attaching package: ‘renv’
+
+The following objects are masked from ‘package:stats’:
+
+    embed, update
+
+The following objects are masked from ‘package:utils’:
+
+    history, upgrade
+
+The following objects are masked from ‘package:base’:
+
+    autoload, load, remove
+
+Error in library(httr) : there is no package called ‘httr’
+Calls: source -> withVisible -> eval -> eval -> library
+Execution halted
+- The project is out-of-sync -- use `renv::status()` for details.
+The following package(s) will be installed:
+- renv [1.0.5]
+These packages will be installed into "~/renv/library/R-4.3/x86_64-pc-linux-gnu".
+
+# Installing packages --------------------------------------------------------
+- Installing renv ...                           OK [linked from cache]
+Successfully installed 1 package in 0.12 seconds.
+
+Attaching package: ‘renv’
+
+The following objects are masked from ‘package:stats’:
+
+    embed, update
+
+The following objects are masked from ‘package:utils’:
+
+    history, upgrade
+
+The following objects are masked from ‘package:base’:
+
+    autoload, load, remove
+
+Error in library(httr) : there is no package called ‘httr’
+Calls: source -> withVisible -> eval -> eval -> library
+Execution halted
+- The project is out-of-sync -- use `renv::status()` for details.
+The following package(s) will be installed:
+- renv [1.0.5]
+These packages will be installed into "~/renv/library/R-4.3/x86_64-pc-linux-gnu".
+
+# Installing packages --------------------------------------------------------
+- Installing renv ...                           OK [linked from cache]
+Successfully installed 1 package in 0.13 seconds.
+
+Attaching package: ‘renv’
+
+The following objects are masked from ‘package:stats’:
+
+    embed, update
+
+The following objects are masked from ‘package:utils’:
+
+    history, upgrade
+
+The following objects are masked from ‘package:base’:
+
+    autoload, load, remove
+
+Error in library(httr) : there is no package called ‘httr’
+Calls: source -> withVisible -> eval -> eval -> library
+Execution halted
+- The project is out-of-sync -- use `renv::status()` for details.
+The following package(s) will be installed:
+- renv [1.0.5]
+These packages will be installed into "~/renv/library/R-4.3/x86_64-pc-linux-gnu".
+
+# Installing packages --------------------------------------------------------
+- Installing renv ...                           OK [linked from cache]
+Successfully installed 1 package in 0.19 seconds.
+
+Attaching package: ‘renv’
+
+The following objects are masked from ‘package:stats’:
+
+    embed, update
+
+The following objects are masked from ‘package:utils’:
+
+    history, upgrade
+
+The following objects are masked from ‘package:base’:
+
+    autoload, load, remove
+
+Error in library(httr) : there is no package called ‘httr’
+Calls: source -> withVisible -> eval -> eval -> library
+Execution halted
+- The project is out-of-sync -- use `renv::status()` for details.
+The following package(s) will be installed:
+- renv [1.0.5]
+These packages will be installed into "~/renv/library/R-4.3/x86_64-pc-linux-gnu".
+
+# Installing packages --------------------------------------------------------
+- Installing renv ...                           OK [linked from cache]
+Successfully installed 1 package in 0.15 seconds.
+
+Attaching package: ‘renv’
+
+The following objects are masked from ‘package:stats’:
+
+    embed, update
+
+The following objects are masked from ‘package:utils’:
+
+    history, upgrade
+
+The following objects are masked from ‘package:base’:
+
+    autoload, load, remove
+
+Error in library(httr) : there is no package called ‘httr’
+Calls: source -> withVisible -> eval -> eval -> library
+Execution halted
+- The project is out-of-sync -- use `renv::status()` for details.
+The following package(s) will be installed:
+- renv [1.0.5]
+These packages will be installed into "~/renv/library/R-4.3/x86_64-pc-linux-gnu".
+
+# Installing packages --------------------------------------------------------
+- Installing renv ...                           OK [linked from cache]
+Successfully installed 1 package in 0.16 seconds.
+
+Attaching package: ‘renv’
+
+The following objects are masked from ‘package:stats’:
+
+    embed, update
+
+The following objects are masked from ‘package:utils’:
+
+    history, upgrade
+
+The following objects are masked from ‘package:base’:
+
+    autoload, load, remove
+
+Error in library(httr) : there is no package called ‘httr’
+Calls: source -> withVisible -> eval -> eval -> library
+Execution halted
+- The project is out-of-sync -- use `renv::status()` for details.
+The following package(s) will be installed:
+- renv [1.0.5]
+These packages will be installed into "~/renv/library/R-4.3/x86_64-pc-linux-gnu".
+
+# Installing packages --------------------------------------------------------
+- Installing renv ...                           OK [linked from cache]
+Successfully installed 1 package in 0.12 seconds.
+
+Attaching package: ‘renv’
+
+The following objects are masked from ‘package:stats’:
+
+    embed, update
+
+The following objects are masked from ‘package:utils’:
+
+    history, upgrade
+
+The following objects are masked from ‘package:base’:
+
+    autoload, load, remove
+
+Error in library(httr) : there is no package called ‘httr’
+Calls: source -> withVisible -> eval -> eval -> library
+Execution halted
+- The project is out-of-sync -- use `renv::status()` for details.
+The following package(s) will be installed:
+- renv [1.0.5]
+These packages will be installed into "~/renv/library/R-4.3/x86_64-pc-linux-gnu".
+
+# Installing packages --------------------------------------------------------
+- Installing renv ...                           OK [linked from cache]
+Successfully installed 1 package in 0.14 seconds.
+
+Attaching package: ‘renv’
+
+The following objects are masked from ‘package:stats’:
+
+    embed, update
+
+The following objects are masked from ‘package:utils’:
+
+    history, upgrade
+
+The following objects are masked from ‘package:base’:
+
+    autoload, load, remove
+
+Error in library(httr) : there is no package called ‘httr’
+Calls: source -> withVisible -> eval -> eval -> library
+Execution halted
+- The project is out-of-sync -- use `renv::status()` for details.
+The following package(s) will be installed:
+- renv [1.0.5]
+These packages will be installed into "~/renv/library/R-4.3/x86_64-pc-linux-gnu".
+
+# Installing packages --------------------------------------------------------
+- Installing renv ...                           OK [linked from cache]
+Successfully installed 1 package in 0.15 seconds.
+
+Attaching package: ‘renv’
+
+The following objects are masked from ‘package:stats’:
+
+    embed, update
+
+The following objects are masked from ‘package:utils’:
+
+    history, upgrade
+
+The following objects are masked from ‘package:base’:
+
+    autoload, load, remove
+
+Error in library(httr) : there is no package called ‘httr’
+Calls: source -> withVisible -> eval -> eval -> library
+Execution halted
+- The project is out-of-sync -- use `renv::status()` for details.
+The following package(s) will be installed:
+- renv [1.0.5]
+These packages will be installed into "~/renv/library/R-4.3/x86_64-pc-linux-gnu".
+
+# Installing packages --------------------------------------------------------
+- Installing renv ...                           OK [linked from cache]
+Successfully installed 1 package in 0.14 seconds.
+
+Attaching package: ‘renv’
+
+The following objects are masked from ‘package:stats’:
+
+    embed, update
+
+The following objects are masked from ‘package:utils’:
+
+    history, upgrade
+
+The following objects are masked from ‘package:base’:
+
+    autoload, load, remove
+
+Error in library(httr) : there is no package called ‘httr’
+Calls: source -> withVisible -> eval -> eval -> library
+Execution halted
+- The project is out-of-sync -- use `renv::status()` for details.
+The following package(s) will be installed:
+- renv [1.0.5]
+These packages will be installed into "~/renv/library/R-4.3/x86_64-pc-linux-gnu".
+
+# Installing packages --------------------------------------------------------
+- Installing renv ...                           OK [linked from cache]
+Successfully installed 1 package in 0.14 seconds.
+
+Attaching package: ‘renv’
+
+The following objects are masked from ‘package:stats’:
+
+    embed, update
+
+The following objects are masked from ‘package:utils’:
+
+    history, upgrade
+
+The following objects are masked from ‘package:base’:
+
+    autoload, load, remove
+
+Error in library(httr) : there is no package called ‘httr’
+Calls: source -> withVisible -> eval -> eval -> library
+Execution halted
+- The project is out-of-sync -- use `renv::status()` for details.
+The following package(s) will be installed:
+- renv [1.0.5]
+These packages will be installed into "~/renv/library/R-4.3/x86_64-pc-linux-gnu".
+
+# Installing packages --------------------------------------------------------
+- Installing renv ...                           OK [linked from cache]
+Successfully installed 1 package in 0.14 seconds.
+
+Attaching package: ‘renv’
+
+The following objects are masked from ‘package:stats’:
+
+    embed, update
+
+The following objects are masked from ‘package:utils’:
+
+    history, upgrade
+
+The following objects are masked from ‘package:base’:
+
+    autoload, load, remove
+
+Error in library(httr) : there is no package called ‘httr’
+Calls: source -> withVisible -> eval -> eval -> library
+Execution halted
+- The project is out-of-sync -- use `renv::status()` for details.
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.0     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:lubridate’:
+
+    hour, isoweek, mday, minute, month, quarter, second, wday, week,
+    yday, year
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:purrr’:
+
+    transpose
+
+
+Attaching package: ‘jsonlite’
+
+The following object is masked from ‘package:purrr’:
+
+    flatten
+
+The following objects are masked from ‘package:rjson’:
+
+    fromJSON, toJSON
+
+[1] "Logged in successfully!"
+No dataValues found in the API response for month 2024-03
+No dataValues found in the API response for month 2024-03
+No dataValues found in the API response for month 2024-03
+No dataValues found in the API response for month 2024-03
+There were 48 warnings (use warnings() to see them)
+[1] "Logged in successfully!"
+Rows: 29,445
+Columns: 5
+$ code      <chr> "14180", "17486", "28290", "18772", "713224", "14181", "3003…
+$ level     <int> 5, 5, 5, 5, 6, 5, 5, 6, 5, 5, 6, 5, 5, 5, 5, 5, 5, 5, 5, 5, …
+$ name      <chr> "10 Engineer VCT", "12 Engineers", "360 Health Care Centre",…
+$ id        <chr> "Vh676wb3d16", "gPEGZGkfDWa", "r96GaeVvrde", "VcJUbEkpml4", …
+$ parent.id <chr> "DpYpJ6E1vRc", "A7a1GZJvTGD", "FydnlJp81aR", "zfVQ2KNTfgY", …
+Rows: 11,679
+Columns: 3
+$ community.id        <chr> "sTf8DjAv3a1", "lhMzjmZKQgt", "OP0teRf3i6x", "jZGO…
+$ community.parent.id <chr> "lR6W5tK8hAq", "Fc0JkHQA1og", "MwFhJW2w7yH", "Bmow…
+$ community           <chr> "3Keys Community Health Unit", "48 Taqwa Community…
+Rows: 15,941
+Columns: 3
+$ facility.id        <chr> "Vh676wb3d16", "gPEGZGkfDWa", "r96GaeVvrde", "VcJUb…
+$ facility.parent.id <chr> "DpYpJ6E1vRc", "A7a1GZJvTGD", "FydnlJp81aR", "zfVQ2…
+$ facility           <chr> "10 Engineer VCT", "12 Engineers", "360 Health Care…
+Rows: 1,453
+Columns: 3
+$ ward.id        <chr> "Mn7xPHjxcxb", "nDZvyhVwri1", "auJK9sKTX9b", "Ay0bToL5B…
+$ ward.parent.id <chr> "EW4Jw4dVWBt", "AFIlzKNxXST", "AFIlzKNxXST", "OnNcTsJgf…
+$ ward           <chr> "Abakaile Ward", "Abogeta East Ward", "Abogeta West War…
+Rows: 324
+Columns: 3
+$ subcounty.id        <chr> "mYlMs4xTj82", "GshNTMZJ5r1", "Sq2fLWnOCGg", "Cu46…
+$ subcounty.parent.id <chr> "pZqQRRW7PHP", "ihZsJ8alvtb", "t0J75eHKxz5", "u4t9…
+$ subcounty           <chr> "Ainabkoi Sub County", "Ainamoi Sub County", "Alda…
+Rows: 47
+Columns: 3
+$ county.id        <chr> "vvOK1BxTbet", "HMNARUV2CW4", "KGHhQ5GLd4k", "Tvf1zgV…
+$ county.parent.id <chr> "HfVjCurKxh2", "HfVjCurKxh2", "HfVjCurKxh2", "HfVjCur…
+$ county           <chr> "Baringo County", "Bomet County", "Bungoma County", "…
+Rows: 29,445
+Columns: 13
+$ code                <chr> "14180", "17486", "28290", "18772", "713224", "141…
+$ level               <int> 5, 5, 5, 5, 6, 5, 5, 6, 5, 5, 6, 5, 5, 5, 5, 5, 5,…
+$ name                <chr> "10 Engineer VCT", "12 Engineers", "360 Health Car…
+$ id                  <chr> "Vh676wb3d16", "gPEGZGkfDWa", "r96GaeVvrde", "VcJU…
+$ parent.id           <chr> "DpYpJ6E1vRc", "A7a1GZJvTGD", "FydnlJp81aR", "zfVQ…
+$ facility.parent.id  <chr> "DpYpJ6E1vRc", "A7a1GZJvTGD", "FydnlJp81aR", "zfVQ…
+$ facility            <chr> "10 Engineer VCT", "12 Engineers", "360 Health Car…
+$ ward.parent.id      <chr> "pF6qPMIlHte", "YZAZ1a9MIvX", "sr8WEz03EnP", "f3Ac…
+$ ward                <chr> "Nanyuki", "Kamenu", "Kadzandani", "Manga", "Junda…
+$ subcounty.parent.id <chr> "xuFdFy6t9AH", "qKzosKQPl6G", "wsBsC6gjHvn", "uepL…
+$ subcounty           <chr> "Laikipia East", "Thika Town", "Nyali", "Manga", "…
+$ county.parent.id    <chr> "HfVjCurKxh2", "HfVjCurKxh2", "HfVjCurKxh2", "HfVj…
+$ county              <chr> "Laikipia", "Kiambu", "Mombasa", "Nyamira", "Momba…
+[1] "Logged in successfully!"
+Rows: 205
+Columns: 2
+$ name <chr> "MOH 731-6 Medically Assisted Therapy (MAT) REVISION 2023", "2013…
+$ id   <chr> "WwALTN8OS22", "NUTEbaJDL5S", "anX6zoNDQEW", "VkjrgmNke7w", "ynX6…
+Rows: 29,445
+Columns: 13
+$ code                <chr> "14180", "17486", "28290", "18772", "713224", "141…
+$ level               <int> 5, 5, 5, 5, 6, 5, 5, 6, 5, 5, 6, 5, 5, 5, 5, 5, 5,…
+$ name                <chr> "10 Engineer VCT", "12 Engineers", "360 Health Car…
+$ id                  <chr> "Vh676wb3d16", "gPEGZGkfDWa", "r96GaeVvrde", "VcJU…
+$ parent.id           <chr> "DpYpJ6E1vRc", "A7a1GZJvTGD", "FydnlJp81aR", "zfVQ…
+$ facility.parent.id  <chr> "DpYpJ6E1vRc", "A7a1GZJvTGD", "FydnlJp81aR", "zfVQ…
+$ facility            <chr> "10 Engineer VCT", "12 Engineers", "360 Health Car…
+$ ward.parent.id      <chr> "pF6qPMIlHte", "YZAZ1a9MIvX", "sr8WEz03EnP", "f3Ac…
+$ ward                <chr> "Nanyuki", "Kamenu", "Kadzandani", "Manga", "Junda…
+$ subcounty.parent.id <chr> "xuFdFy6t9AH", "qKzosKQPl6G", "wsBsC6gjHvn", "uepL…
+$ subcounty           <chr> "Laikipia East", "Thika Town", "Nyali", "Manga", "…
+$ county.parent.id    <chr> "HfVjCurKxh2", "HfVjCurKxh2", "HfVjCurKxh2", "HfVj…
+$ county              <chr> "Laikipia", "Kiambu", "Mombasa", "Nyamira", "Momba…
