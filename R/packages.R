@@ -13,6 +13,8 @@ library(data.table)
 library(readxl)
 library(jsonlite)
 library(datimutils)
+library(RcppRoll)
+library(zoo)
 
 
 # devtools::install_github(repo = "https://github.com/pepfar-datim/datimutils.git", 
