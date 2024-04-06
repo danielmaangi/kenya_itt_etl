@@ -14,8 +14,8 @@ print(cmd)  # Check the command
 # Schedule the cron job
 cron_add(command = cmd, 
          frequency = 'daily', 
-         at = "08:06PM", 
-         id = 'test245', 
+         at = "15:56PM", 
+         id = 'test2456', 
          description = 'My process 2')
 
 # cron_add(command = cmd, 
@@ -24,4 +24,7 @@ cron_add(command = cmd,
 #          description = 'My process 1')
 
 cron_njobs()
-cronR::cron_clear()
+#cronR::cron_clear()
+
+# Test on terminal
+# Rscript ~/projects/insupplyHealth/kenya_itt/data/kenya_itt/refresh.R

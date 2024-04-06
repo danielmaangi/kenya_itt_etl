@@ -1,10 +1,5 @@
-# SETUP
-# Load the renv package
-#install.packages("renv")
-
-.libPaths(c("~/projects/insupplyHealth/kenya_itt/data/kenya_itt/renv/library", .libPaths()))
-
 # Required Libraries
+#library(httr, lib.loc = custom_lib_path)
 library(httr)
 library(rjson)
 library(tidyverse)

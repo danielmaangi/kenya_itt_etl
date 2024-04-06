@@ -56,7 +56,8 @@ monthly_download <- function(dataset, startdate, enddate, orgunit, output_folder
         # Check if the response contains dataValues
         if ("dataValues" %in% names(content) && length(content$dataValues) > 0) {
           # Convert dataValues to a data frame
-          data <- rbindlist(content$dataValues, fill = TRUE)
+          data <- rbindlist(content$dataValues, fill = TRUE) |>
+            mutate(extract_date = lubridate::now())
           
           # Save data to a file in the output_folder
           filename <- file.path(output_folder, paste0("data_", format(start_date, "%Y-%m"), ".csv"))
@@ -97,7 +98,8 @@ fetch_reports <- function(dataset, startdate, enddate, orgunit, output_folder) {
                         ),
                  pe = month,
                  ou = c("HfVjCurKxh2", "LEVEL-5"),
-                 timeout = 300)
+                 timeout = 300)|>
+       mutate(extract_date = lubridate::now())
     
       # Save data to a file in the output_folder
      filename <- file.path(output_folder, paste0("data_", format(start_date, "%Y-%m"), ".csv"))

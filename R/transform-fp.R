@@ -35,7 +35,7 @@ fp_data <- map_df(list.files(paste0(project_path, "raw/FP/"),
 
 # Transformation
 # orgunit
-all_fp_des <- fp_data |> distinct(de_name) |> arrange(de_name) |> as_tibble()
+all_fp_des <- fp_data |> distinct(de_name, product) |> arrange(de_name) |> as_tibble()
 all_fp_coc <- fp_data |> distinct(coc_name) |> arrange(coc_name) |> as_tibble()
 all_fp_attr <- fp_data |> distinct(attr_name) |> arrange(attr_name) |> as_tibble()
 
@@ -51,38 +51,60 @@ fp_transform <- fp_data |>
     end_bal = sum(value[coc_name == "Ending Balance"]),
     begin_bal = sum(value[coc_name == "Beginning Balance"]),
     recieved = sum(value[coc_name %in% c("Quantity Received From KEMSA", "Quantity Received From Kenya Red Cross")]),
-    consumed = sum(value[coc_name == "Dispensed"]) # can this be improved?
+    dispensed = sum(value[coc_name == "Dispensed"]),
+    clients = sum(value[coc_name == "New clients"]) + sum(value[coc_name == "Re-visits"]),
+    expired = sum(value[coc_name == "Expired"]),
+    expire_in_6m = sum(value[coc_name == "Quantity expiring in less than 6 months"]),
+    losses = sum(value[coc_name == "Losses"]),
+    negative_adjust = sum(value[coc_name == "Negative"]),
+    positive_adjust = sum(value[coc_name == "Positive"])
   ) |>
   ungroup() |>
-  complete(Programme, orgUnit, product, period) %>%
-  arrange(Programme, orgUnit, product, period) |>
-  mutate(end_bal_lag1 = lag(end_bal),
-         diff = end_bal_lag1 - begin_bal,
+  complete(Programme, orgUnit, product, period) |>
+  as.data.table()
+
+# Calculate the lagged values within groups
+fp_transform[, end_bal_lag1 := shift(end_bal), 
+             by = .(Programme, orgUnit, product)]
+
+# Calculate rolling sum for each group
+fp_transform[, dispensed_sum_3m := frollsum(dispensed, n = 3), 
+             by = .(Programme, orgUnit, product)]
+
+# calculate amc @ site
+fp_transform[, amc_3m := frollmean(dispensed, n = 3), 
+             by = .(Programme, orgUnit, product)]
+
+
+
+fp_transform <- fp_transform |>
+  dtplyr::lazy_dt() |>
+  group_by(Programme, orgUnit, product, period) |>
+  arrange(Programme, orgUnit, product) |>
+  ungroup() |>
+  mutate(diff = end_bal_lag1 - begin_bal,
          abs_diff = abs(diff),
          abs_diff_percent = ifelse(end_bal_lag1 == 0, NA_real_ , abs_diff / end_bal_lag1),
          abs_diff_percent_10 = dplyr::case_when(abs_diff_percent <= 0.1 ~ 1,
                                      abs_diff_percent > 0.1 ~ 0,
                                      TRUE ~ NA_real_),
-         abs_diff_percent_10_den = case_when(abs_diff_percent_10 %in% c(0,1) ~ 1,
-                                         TRUE ~ 0 )
+         mos_3m = ifelse(end_bal == 0, NA_real_ , end_bal / amc_3m),
+         stock_status = case_when(mos_3m == 0 ~ "Stock out",
+                                  mos_3m > 0 & mos_3m < 1 ~ "Understock",
+                                  mos_3m >= 1 & mos_3m < 4 ~ "Adequate",
+                                  mos_3m >= 4 ~ "Overstock",
+                                  TRUE ~ NA_character_),
+         expected_end_bal = (rowSums(select(., c("begin_bal", "recieved", "positive_adjust")), na.rm = TRUE) -
+                               rowSums(select(., c("dispensed", "losses", "negative_adjust")), na.rm = TRUE))
          ) |>
   group_by(Programme, orgUnit, product, period) |>
   ungroup() |>
-  as.data.table()
+  mutate(program_id = fp_dataset) |>
+  as.data.table() 
 
-# fp_transform[, rolling_sum := frollsum(consumed, n = 3, align = "right", fill = NA), 
-#              by = .(Programme, orgUnit, product, period)]
+dmpa <- fp_transform |> filter(product == "DMPA-SC") |> filter(orgUnit == "A2m3Fgwhf2v")
 
-
-
-# Combine results
-all_reports <- bind_rows(fp_data_reports, 
-                         imm_data_reports, 
-                         mal_data_reports, 
-                         nut_data_reports)
-
-fwrite(programs, paste0(project_path, "transform/programs.csv"))
-
+fwrite(fp_transform, paste0(project_path, "transform/FP/fp_transform_nulls.csv"))
 
 
 
